@@ -43,7 +43,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build
-      run: docker build -t harishkumar10/myapp:latest  
+      run: docker build -t harishkumar10/myapp:latest .
       
     - name: Push
       run: docker push harishkumar10/myapp:latest
